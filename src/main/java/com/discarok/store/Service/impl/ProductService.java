@@ -28,9 +28,10 @@ public class ProductService implements ServiceInterface<Product, Integer>{
 	}
 
 	@Override
-	public void save(Product t) {
+	public Product save(Product t) {
 		// TODO Auto-generated method stub
-		productRepository.save(t);
+		Product product = productRepository.save(t);
+		return product;
 	}
 
 	@Override

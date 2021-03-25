@@ -7,7 +7,7 @@ public interface ServiceInterface<T,Id>{
 
 	public List<T> findAll();
 
-	public void save(T t);
+	public T save(T t);
 
 	public void deleteById(Id id);
 }

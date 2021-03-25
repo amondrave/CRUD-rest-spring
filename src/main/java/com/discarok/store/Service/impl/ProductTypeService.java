@@ -28,9 +28,9 @@ public class ProductTypeService implements ServiceInterface<ProductType, Integer
 	}
 
 	@Override
-	public void save(ProductType t) {
+	public ProductType save(ProductType t) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override

@@ -28,17 +28,16 @@ public class ProductType {
 	@Column(name="name", length = 20, nullable = false, unique = true)
 	private String name;
 	
-	@OneToMany(mappedBy = "type", cascade = CascadeType.REMOVE)
-	private Set<Product> products;
+	
 	
 	
 	// construct
 
-	public ProductType(int id, String name, Set<Product> products) {
+	public ProductType(int id, String name ){
 		super();
 		this.id = id;
 		this.name = name;
-		this.products = products;
+
 	}
 	
 	public ProductType() {
@@ -63,13 +62,7 @@ public class ProductType {
 		this.name = name;
 	}
 
-	public Set<Product> getProducts() {
-		return products;
-	}
-
-	public void setProducts(Set<Product> products) {
-		this.products = products;
-	}
+	
 	
 	
 	
